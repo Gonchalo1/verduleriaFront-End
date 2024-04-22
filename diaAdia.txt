@@ -13,3 +13,6 @@ y después agregarle la funcionalidad y luego la estética.
 Voy por buen camino, mañana tengo:
 .terminar contacto y perfíl
 .Empezar con los productos.
+
+dia3:
+Hoy seguí estructurando la parte de inicio, simplemente avanzando.
