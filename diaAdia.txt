@@ -1,0 +1,15 @@
+dia 1:
+estoy avanzando con la estructura de perfíl y ya tengo
+ la estructura de login y de registro, solamente nesecito 
+ seguir trabajando para terminar la estructura
+0 de todos así puedo luego agregarle la funcionalidad 
+con el back-end, para terminar agregando la estética por 
+último, no me rendiré.
+
+dia2:
+hoy pude hacer la parte de contacto, me falta eliminar 
+la estructura del resto, para agregarle la navegación
+y después agregarle la funcionalidad y luego la estética.
+Voy por buen camino, mañana tengo:
+.terminar contacto y perfíl
+.Empezar con los productos.
