@@ -16,9 +16,17 @@ Voy por buen camino, mañana tengo:
 
 dia3:
 Hoy seguí estructurando la parte de inicio, simplemente avanzando.
+
 dia4:
 terminando login y registro, nomas me falta su funcionalidad y el nav.
+
 dia5:
 he implementado en login, nomas me falta registro
+
 dia6:
 Se hizo la conexion, pero el contenido tiene que pasarce bien, ese es el problema.
+
+dia7: 
+He estado trabajando en la seccion de actualizar datos, le falta terminar la peticion 
+correctamente, debido a que nesecito el id del usuario que se encuentra en el back-end,
+NO TOCAR NADA DE LA CARPETA CAMBIARDATOS

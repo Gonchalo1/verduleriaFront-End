@@ -6,20 +6,23 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Login from './loginRegistro/login';
 import Registro from './loginRegistro/registro';
 import Perfil from './perfil/perfil';
+import CambiarDatos from './cambiarDatos/cambiarDatos';
 import Nosotros from './sobreNosotros/nosotros';
 import Inicio from './inicio/inicio';
 import Footer from './footer/footer';
+
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Routes>
+        <Route path="/perfil" element={<Perfil />} />
           <Route path="/" element={<Inicio />} />
           <Route path="/login" element={<Login />} />
           <Route path="/registro" element={<Registro />} />
-          <Route path="/perfil" element={<Perfil />} />
           <Route path="/nosotros" element={<Nosotros />} />
+          <Route path="/cambiarDatos" element={<CambiarDatos />} />
         </Routes>
         
       </div>

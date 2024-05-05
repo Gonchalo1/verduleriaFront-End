@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom'; // Importa Link desde react-router-dom
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import Footer from '../footer/footer';
 function Perfil() {
@@ -49,7 +50,10 @@ function Perfil() {
           <input type="password" className="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" readOnly/>
         </div>
         <div className="col-5 mt-3">
-          <button className="btn btn-danger m-1">Cerrar sesión</button>
+        <Link to="/login"> {/* Utiliza Link para redirigir al usuario */}
+            <button className="btn btn-danger m-1">Cerrar sesión</button>
+          </Link>
+
           <button type="button" class="btn btn-info">Cambiar datos</button>
         </div>
       </div>
