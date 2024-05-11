@@ -29,4 +29,8 @@ Se hizo la conexion, pero el contenido tiene que pasarce bien, ese es el problem
 dia7: 
 He estado trabajando en la seccion de actualizar datos, le falta terminar la peticion 
 correctamente, debido a que nesecito el id del usuario que se encuentra en el back-end,
-NO TOCAR NADA DE LA CARPETA CAMBIARDATOS
+
+dia8:
+Cási no tuve tiempo, pero me di cuenta que tengo que modificar el registro para que me
+devuelva el id, y almacenarlo en una variable de estado, para así usar esa variable
+en la petición put.
