@@ -1,6 +1,4 @@
 import React from 'react';
-
-import Footer from '../footer/footer';
 import Nav from '../nav/nav';
 import inicio from './inicio.jpg';
 
@@ -18,7 +16,7 @@ function Inicio() {
           </div>
         </div>
       </div>
-      <Footer />
+      
     </div>
   );
 }

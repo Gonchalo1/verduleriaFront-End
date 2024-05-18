@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
-import Footer from '../footer/footer';
+// src/components/Perfil.js
+import { React, useState, useNavigate } from '../importacionesComunes/importacionesComunes';
+
+
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  const navigate = useNavigate(); // Obtén la función de navegación
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -16,7 +20,11 @@ function Login() {
         body: JSON.stringify({ email, password }),
       });
       if (response.ok) {
+        const data = await response.json();
+        const userId = data.user.id; // Ajusta esto según la estructura de tu respuesta
+        localStorage.setItem('userId', userId);
         alert("Inicio de sesión exitoso");
+        navigate('/'); // Redirige al usuario a INICIO
       } else {
         // Manejar errores, mostrar mensajes de error, etc.
         alert("Error al iniciar sesión. Por favor, inténtalo de nuevo.");
@@ -55,8 +63,7 @@ function Login() {
             </div>
             <button type="submit" className="btn btn-primary mb-4">Enviar</button>
             <p><a href="#">¿Olvidaste tu contraseña?</a></p>
-          </form>
-          <Footer />
+          </form>        
         </div>
       </div>
     </div>

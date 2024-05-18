@@ -34,3 +34,33 @@ dia8:
 Cási no tuve tiempo, pero me di cuenta que tengo que modificar el registro para que me
 devuelva el id, y almacenarlo en una variable de estado, para así usar esa variable
 en la petición put.
+
+dia9-10-11:
+He estadp intentando poner el método put para actualizar los datos, pero todavia no encuentro
+ la manera de lograr hacerlo exitosamente, pero creo que le estoy pasando mal la peticion y le 
+ pongo mal la peticion al back-end para que lo tome, es solo cuestion de tiempo.
+
+ dia12:
+ me di cuenta que no se estaba almacenando en la variable el id por un problema del back-end asique 
+ lo modifiqué y ahora si me lo toma, el tema esque tengo que hacer que el id persista en el
+ localStorage y a la vez que resista la recarga que podría hacer el usuario, asique es cuestión
+ de tiempo nomas, pero voy encaminado yupi.
+
+ dia13 un gran dia:
+ he podido implementar el put y guardar la variable del id en el localStoragge, me falta el show
+ para cuando el usuario entre a perfíl, eso es fácil, y me falta el dlete, eso también es fácil
+ porque ya tengo el id, voy por buen camino.
+
+ dia14:
+ He termiando mi parte del proyecto, añadí las funcionaldiades rest api a mi web.
+ Depuré el código para optimizar todo, igualmente sé que es mejor las variables guardarlas
+ en otros archivos y usarlas como importaciones para no tener 130 líneas de código x archivo.
+ Pero como esto es solo un proyecto personal, lo omito por tema de rapidez y la escalabilidad
+ del proyecto, no hace falta matarse con eso.
+ A la web le falta:
+ Sobre nosotros.
+ Productos.
+ Delivery. (debatible)
+ Inicio.
+ Nav.
+ Es cuestión de tiempo.
