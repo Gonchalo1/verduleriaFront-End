@@ -10,6 +10,7 @@ import CambiarDatos from './cambiarDatos/cambiarDatos';
 import Nosotros from './sobreNosotros/nosotros';
 import Inicio from './inicio/inicio';
 import Footer from './footer/footer';
+import ProductoSeccion from './productos/productoSeccion';
 
 function App() {
   const [userId, setUserId] = useState(null);
@@ -25,11 +26,12 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-          <Route path="/perfil" element={<Perfil userId={userId} />} />
           <Route path="/" element={<Inicio />} />
           <Route path="/login" element={<Login />} />
           <Route path="/registro" element={<Registro setUserId={setUserId} />} />
+          <Route path="/producto" element={<ProductoSeccion  />} />
           <Route path="/nosotros" element={<Nosotros />} />
+          <Route path="/perfil" element={<Perfil userId={userId} />} />
           <Route path="/cambiarDatos" element={<CambiarDatos userId={userId} />} />
         </Routes>
         <Footer />

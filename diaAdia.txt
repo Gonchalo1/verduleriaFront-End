@@ -64,3 +64,6 @@ He estadp intentando poner el método put para actualizar los datos, pero todavi
  Inicio.
  Nav.
  Es cuestión de tiempo.
+ dia15:
+ estuve implementano una versión mas escalable de productos, aún no puedo rendrizarla pero 
+ es simplemente modularización y ya.
