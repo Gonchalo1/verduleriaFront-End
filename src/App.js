@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap-icons/font/bootstrap-icons.css'; 
+import Nav from './nav/nav';
 
 import Login from './loginRegistro/login';
 import Registro from './loginRegistro/registro';
@@ -25,6 +28,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+      <Nav /> {/* Esto hará que el nav se renderice en todas las páginas */}
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/login" element={<Login />} />

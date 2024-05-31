@@ -67,3 +67,14 @@ He estadp intentando poner el método put para actualizar los datos, pero todavi
  dia15:
  estuve implementano una versión mas escalable de productos, aún no puedo rendrizarla pero 
  es simplemente modularización y ya.
+ dia16-17:
+ estaba trabajando en el estilo final de mis partes y como mi compañera ya no puede continuar, estuve
+ desarrollando el main y estoy por la parte del texto genérico, pero voy encaminado, seguramente
+ tenga que ordenar bien las carpetas y cosas así, y me acabo de dar cuenta que tarda mucho en cargar
+ porque le pongo el video d1 en vez de comprimirla o algo así, tengo que arreglar eso.
+ dia18:
+ terminé todo el main y me falta hacerlo responsive y ver que me dice mi compañero en cuanto al diseño.
+ Luego de adaptar eso, finalmente haré la conexión con el back-end y se terminará.
+ dia19-20:
+ Cási termino el nav, nomas tengo que hacer que el div encima del header y el header tenga el mísmo 
+ ancho lo arreglaré con el tiempo hasta que me ayude mi colega, mientras tanto hay que seguír trabajando.

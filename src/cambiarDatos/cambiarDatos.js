@@ -60,52 +60,44 @@ function CambiarDatos({ userId }) {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <div className="container text-center mt-5">
-                <div className="row justify-content-start">
-                    <div className="col-4">
-                        <FontAwesomeIcon icon={faUser} size="3x" />
-                    </div>
-                    <div className="col-8">
-                        <h2>DATOS-NUEVOS</h2>
-                    </div>
-                </div>
-                <div className="row justify-content-start">
-                    <div className="col-4">
-                        <label htmlFor="exampleInputName1" className="form-label">NOMBRE</label><br/>
-                        <input type="text" className="form-control" id="exampleInputName1" aria-describedby="nameHelp" value={nombre} onChange={handleNombreChange} />
-                    </div>
-                </div>
-                <div className="row justify-content-center">
-                    <div className="col-4">
-                        <label htmlFor="exampleInputEmail1" className="form-label">EMAIL</label><br/>
-                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value={email} onChange={handleEmailChange} />
-                    </div>
-                </div>
-                <div className="row justify-content-end">
-                    <div className="col-4">
-                        <label htmlFor="exampleInputSex1" className="form-label">SEXO</label><br/>
-                        <select className="form-select" id="exampleInputSex1" value={sexo} onChange={handleSexoChange}>
-                            <option value="Masculino">Masculino</option>
-                            <option value="Femenino">Femenino</option>
-                        </select>
-                    </div>
-                    <div className="col-4">
-                        <label htmlFor="exampleInputAge1" className="form-label">EDAD</label><br/>
-                        <input type="number" className="form-control" id="exampleInputAge1" aria-describedby="emailHelp" value={edad} onChange={handleEdadChange} min="5" max="120" />
-                    </div>
-                </div>
-                <div className="row justify-content-around">
-                    <div className="col-4">
-                        <label htmlFor="exampleInputPassword1" className="form-label">CONTRASEÑA</label><br/>
-                        <input type="password" className="form-control" id="exampleInputPassword1" aria-describedby="emailHelp" value={contraseña} onChange={handleContraseñaChange} />
-                    </div>
-                    <div className="col-5 mt-3">
-                        <button type="submit" className="btn btn-primary m-1">Enviar</button>
+        <div className="container login-container">
+            <div className="row justify-content-center align-items-center vh-100">
+                <div className="col-md-6 form-section">
+                    <div className="form-container">
+                        <form onSubmit={handleSubmit}>
+                            <div className="mb-4">
+                                <FontAwesomeIcon icon={faUser} size="3x" />
+                                <h2>DATOS-NUEVOS</h2>
+                            </div>
+                            <div className="mb-4">
+                                <label htmlFor="exampleInputName1" className="form-label">NOMBRE</label><br />
+                                <input type="text" className="form-control justified-input" id="exampleInputName1" aria-describedby="nameHelp" value={nombre} onChange={handleNombreChange} />
+                            </div>
+                            <div className="mb-4">
+                                <label htmlFor="exampleInputEmail1" className="form-label">EMAIL</label><br />
+                                <input type="email" className="form-control justified-input" id="exampleInputEmail1" aria-describedby="emailHelp" value={email} onChange={handleEmailChange} />
+                            </div>
+                            <div className="mb-4">
+                                <label htmlFor="exampleInputSex1" className="form-label">SEXO</label><br />
+                                <select className="form-select justified-input" id="exampleInputSex1" value={sexo} onChange={handleSexoChange}>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Femenino">Femenino</option>
+                                </select>
+                            </div>
+                            <div className="mb-4">
+                                <label htmlFor="exampleInputAge1" className="form-label">EDAD</label><br />
+                                <input type="number" className="form-control justified-input" id="exampleInputAge1" aria-describedby="emailHelp" value={edad} onChange={handleEdadChange} min="5" max="120" />
+                            </div>
+                            <div className="mb-4">
+                                <label htmlFor="exampleInputPassword1" className="form-label">CONTRASEÑA</label><br />
+                                <input type="password" className="form-control justified-input" id="exampleInputPassword1" aria-describedby="emailHelp" value={contraseña} onChange={handleContraseñaChange} />
+                            </div>
+                            <button type="submit" className="btn btn-primary justified-input mb-4">Enviar</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
     );
 }
 

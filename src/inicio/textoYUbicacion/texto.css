@@ -1,0 +1,48 @@
+.image-section {
+    background-image: url('./imagenes/generico1.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    border-radius: 50%; /* Esto hará que el contenedor sea circular */
+}
+.div1{
+text-align: left;
+}
+.div2 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Opcional: centra el texto si es necesario */
+  }
+  
+.div3{
+    text-align: left;
+    margin: 30px;
+}
+.div4{
+    text-align: left;
+    margin: 30px;
+}
+
+.serCliente {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinea los elementos verticalmente en el centro */
+    padding: 10px; /* Espaciado interno opcional */
+    margin-left: 20%; /* Ajusta este valor según sea necesario para reducir el espacio entre el h1 y el botón */
+    
+  }
+  
+  .serCliente h1 {
+    margin: 0; /* Elimina el margen por defecto */
+  }
+  
+  .serCliente button {
+    margin-right: 30%;
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 1rem; /* Tamaño de fuente del botón */
+    border-radius: 50px;
+    
+  }
+  
