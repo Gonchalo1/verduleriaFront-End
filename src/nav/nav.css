@@ -3,6 +3,9 @@ img {
   max-height: 20vh;
   margin-left: 15vh;
 }
+button{
+  background-color: orange;
+}
 
 .contact-info {
   background-color: #4CAF50;
@@ -61,6 +64,7 @@ img {
 
 .div-principal {
   margin-right: 33vh;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {

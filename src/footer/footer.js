@@ -1,41 +1,39 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import './footer.css';
+import logo from '../nav/logo.png';
 
 function Footer() {
   return (
-    <div>
-      <footer className="footer mt-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12 text-center">
-              <ul className="list-inline social-buttons">
-                <li className="list-inline-item">
-                  <a href="https://www.instagram.com/">
-                    <FontAwesomeIcon icon={faInstagram} />
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="https://www.facebook.com/">
-                    <FontAwesomeIcon icon={faFacebook} />
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="https://twitter.com/">
-                    <FontAwesomeIcon icon={faTwitter} />
-                  </a>
-                </li>
-              </ul>
-            
-              <p>
-                © 2024 |Verduleria EL JOHNNY | Buenos Aires
-            </p>
-            </div>
-          </div>
+    <footer className="footer mt-5">
+      <div className="container d-flex justify-content-between align-items-center">
+        <div className='div1 text-center'>
+          <img src={logo} alt="Logo" />
+          <p>Verduleria de barrio al alcance tullo</p>
         </div>
-      </footer>
-    </div>
+        <div className='div2 text-center'>
+          <h1>MENU</h1>
+          <Link className="navbar-brand" to="/productos">Productos </Link>
+          <Link className="navbar-brand" to="/">Home </Link>
+          <Link className="navbar-brand" to="/nosotros"><button>Contacto</button></Link>
+        </div>
+        <div className='div3 text-center'>
+          <h1>CONTACTO</h1>
+          <p>Dirección: Virgen de las Nieves 3900-3948, Mendoza</p>
+        </div>
+        <div className='div4 text-center'>
+          <h1>REDES SOCIALES</h1>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} size="2x" />
+          </a>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFacebook} size="2x" />
+          </a>
+        </div>
+      </div>
+    </footer>
   );
 }
 

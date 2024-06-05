@@ -23,7 +23,7 @@ function Nav() {
               <div className='div1'>
                 <Link className="navbar-brand" to="/productos">Productos</Link>
                 <Link className="navbar-brand" to="/">Home</Link>
-                <Link className="navbar-brand" to="/nosotros">Contacto</Link>
+                <Link className="navbar-brand" to="/nosotros"><button>Contacto</button></Link>
               </div>
               <div className='div2'>
                 <Link className="navbar-brand" to="/login"><i className="bi bi-door-open"></i> Iniciar Sesión</Link>

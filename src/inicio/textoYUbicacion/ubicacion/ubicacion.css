@@ -1,18 +1,26 @@
-/* Asegúrate de que el contenedor ocupe todo el espacio disponible */
+/* Contenedor principal de ubicación */
 .ubicacion-container {
-    width: 100%;
-    height: 100vh; /* Hace que el contenedor ocupe toda la altura de la ventana */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0; /* Elimina cualquier padding */
-    margin-top: 10%;
+  width: 100%;
+  height: 70vh; /* Cambia a una altura más manejable */
+  display: flex;
+  flex-direction: column; /* Cambia la dirección del flex a columna */
+  justify-content: flex-start; /* Alinea los elementos al principio */
+  align-items: center;
+  padding: 0;
+  margin-top: 20%;
+}
+
+/* Iframe que contiene el mapa */
+.ubicacion-iframe {
+  width: 100%;
+  height: 100%;
+  border: none; /* Elimina el borde por defecto del iframe */
+}
+
+/* Media queries para ajustar el diseño en diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+  .ubicacion-container {
+      height: 50vh; /* Reduce la altura en pantallas más pequeñas */
+      margin-top: 25%;
   }
-  
-  /* Asegúrate de que el iframe ocupe todo el espacio del contenedor */
-  .ubicacion-iframe {
-    width: 100%;
-    height: 100%;
-    border: none; /* Elimina el borde por defecto del iframe */
-  }
-  
+}

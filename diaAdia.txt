@@ -78,3 +78,21 @@ He estadp intentando poner el método put para actualizar los datos, pero todavi
  dia19-20:
  Cási termino el nav, nomas tengo que hacer que el div encima del header y el header tenga el mísmo 
  ancho lo arreglaré con el tiempo hasta que me ayude mi colega, mientras tanto hay que seguír trabajando.
+ dia21:
+ Terminé definitivamente la parte de main, noams me falta productos y cuando temrine productos, tengo que
+ ordenar x id lo del carousel y debugear el código y ordenarlo, asique estoy muy cerca de terminar siiiii.
+ dia22:
+ Finalmente solo me falta productos, conectar con back-end y debugear.
+ Productos:
+ Nav a la derecha y productos en general.
+ Sección para el producto en específico.
+ Sección de datos bancarios y ubicación, acorde a los kg que se marquen.
+
+ Terminando el día he podido hacer en parte el front-end y para el lado del back-end nesecito agregarle
+ imágenes a la tabla y precio, ademas de solucionar el problema del seeder.
+dia23:
+En el día de hoy he efectuado cási todo el back-end, nomas nesecito implementar el id para la parte
+del producto en sí, y que se conecte con el front-end y ya está, lo estilizamos, denugeamos y subimos.
+Estoy muy cerca de acabar.
+dia24:
+TERMINÉ

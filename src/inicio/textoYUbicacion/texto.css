@@ -1,48 +1,68 @@
+/* Ajustes generales para mejorar la responsividad */
+.container {
+  padding: 20px;
+}
+
+.form-section, .image-section {
+  padding: 20px;
+}
+
 .image-section {
-    background-image: url('./imagenes/generico1.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    border-radius: 50%; /* Esto hará que el contenedor sea circular */
+  background-image: url('./imagenes/generico1.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh; /* Ajusta la altura para que no se vea tan estirada */
+  border-radius: 10px; /* Ajuste el radio según sea necesario */
 }
-.div1{
-text-align: left;
+
+.div1, .div2, .div3, .div4 {
+  text-align: left;
+  margin: 20px 0;
 }
+
 .div2 {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: center; /* Opcional: centra el texto si es necesario */
-  }
-  
-.div3{
-    text-align: left;
-    margin: 30px;
-}
-.div4{
-    text-align: left;
-    margin: 30px;
+  text-align: center; /* Centra el texto si es necesario */
 }
 
 .serCliente {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Alinea los elementos verticalmente en el centro */
-    padding: 10px; /* Espaciado interno opcional */
-    margin-left: 20%; /* Ajusta este valor según sea necesario para reducir el espacio entre el h1 y el botón */
-    
+  display: flex;
+  flex-direction: column; /* Cambia a columna para mejor responsividad */
+  align-items: center; /* Centra los elementos verticalmente */
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.serCliente h2 {
+  margin: 10px 0;
+}
+
+.serCliente button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 50px;
+}
+
+/* Media queries para ajustar el diseño en diferentes tamaños de pantalla */
+@media (min-width: 768px) {
+  .vh-100 {
+      height: auto; /* Ajusta la altura en pantallas más grandes */
+  }
+
+  .image-section {
+      height: 100%; /* Asegúrate de que la imagen ocupe toda la altura de la sección en pantallas más grandes */
+  }
+}
+
+@media (max-width: 767px) {
+  .login-container {
+      display: flex;
+      flex-direction: column; /* Cambia la dirección del flex a columna en pantallas pequeñas */
   }
   
-  .serCliente h1 {
-    margin: 0; /* Elimina el margen por defecto */
+  .serCliente {
+      margin-top: 20px;
+      align-self: center; /* Asegúrate de centrar la sección en pantallas pequeñas */
   }
-  
-  .serCliente button {
-    margin-right: 30%;
-    padding: 10px 20px; /* Espaciado interno del botón */
-    font-size: 1rem; /* Tamaño de fuente del botón */
-    border-radius: 50px;
-    
-  }
-  
+}

@@ -13,7 +13,10 @@ import CambiarDatos from './cambiarDatos/cambiarDatos';
 import Nosotros from './sobreNosotros/nosotros';
 import Inicio from './inicio/inicio';
 import Footer from './footer/footer';
-import ProductoSeccion from './productos/productoSeccion';
+import Productos from './productos/productos';
+// Importa DatosUsuario desde la carpeta datosUsuario
+import DatosUsuario from './productos/datosUsuario/datosUsuario';
+
 
 function App() {
   const [userId, setUserId] = useState(null);
@@ -28,12 +31,14 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <Nav /> {/* Esto hará que el nav se renderice en todas las páginas */}
+        <Nav /> {/* Esto hará que el nav se renderice en todas las páginas */}
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/login" element={<Login />} />
           <Route path="/registro" element={<Registro setUserId={setUserId} />} />
-          <Route path="/producto" element={<ProductoSeccion  />} />
+          <Route path="/productos" element={<Productos/>} />
+          {/* Utiliza la ruta adecuada para acceder a DatosUsuario */}
+          <Route path="/datosUsuario" element={<DatosUsuario />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/perfil" element={<Perfil userId={userId} />} />
           <Route path="/cambiarDatos" element={<CambiarDatos userId={userId} />} />

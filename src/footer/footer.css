@@ -1,0 +1,19 @@
+.footer .container {
+    flex-wrap: wrap;
+  }
+  
+  .footer .div1, .footer .div2, .footer .div3, .footer .div4 {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer .div4 a {
+    margin-right: 15px;
+    color: #000; /* Ajusta el color según tu diseño */
+    transition: color 0.3s;
+  }
+  
+  .footer .div4 a:hover {
+    color: #007bff; /* Cambia el color al pasar el ratón */
+  }
+  

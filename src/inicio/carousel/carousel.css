@@ -1,34 +1,24 @@
-h1 {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.carousel-img {
-  width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
-  height: 100%; /* Ocupa toda la altura del contenedor */
-  object-fit: cover; /* Asegura que las imágenes cubran el contenedor sin deformarse */
-}
-
 .carousel-item {
-  height: 300px; /* Ajusta la altura para pantallas pequeñas */
-  display: flex;
-  align-items: center; /* Centra las imágenes verticalmente */
-  justify-content: center; /* Centra las imágenes horizontalmente */
+  height: auto; /* Ajusta la altura del contenedor */
+  text-align: center;
 }
 
-@media (min-width: 768px) {
-  .carousel-item {
-    height: 500px; /* Ajusta la altura para pantallas más grandes */
-  }
+.carousel-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+  margin: 0 auto;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Cambia el color de las flechas a negro */
 }
 
-.custom-link {
-  color: inherit; /* Hereda el color del texto circundante */
-  text-decoration: none; /* Elimina el subrayado */
+.carousel-indicators [data-bs-target] {
+  background-color: black; /* Cambia el color de los indicadores a negro */
 }
 
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-  padding: 10px;
-  border-radius: 5px;
+.carousel-indicators .active {
+  background-color: black; /* Cambia el color del indicador activo a negro */
 }
