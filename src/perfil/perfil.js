@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-import './perfil.css'; // Importa tus estilos personalizados si tienes alguno
+
 
 function Perfil({ userId }) {
   const navigate = useNavigate(); 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap-icons/font/bootstrap-icons.css'; 
@@ -37,7 +37,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/registro" element={<Registro setUserId={setUserId} />} />
           <Route path="/productos" element={<Productos/>} />
-          {/* Utiliza la ruta adecuada para acceder a DatosUsuario */}
+          
           <Route path="/datosUsuario" element={<DatosUsuario />} />
           <Route path="/nosotros" element={<Nosotros />} />
           <Route path="/perfil" element={<Perfil userId={userId} />} />
